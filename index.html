@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwindcss Layout</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="p-6 space-y-6">   
+    <div class="absolute top-0 right-0 z-50 bg-purple-200 p-4 mt-4">
+    This should appear on top if overlapped
+   </div>
+   <div class="mx-auto container bg-gray-200 p-4">
+        Container
+   </div> 
+   <div class="border-box p-4 border-4 border-blue-500">
+    Box sizing
+   </div>
+   <div class="inline bg-green-200">
+    Display(Inline)
+   </div>
+   <div class="float-right bg-red-200 w-32">
+    Float
+   </div>
+   <div>
+    <img src="pexels-pixabay-270404.jpg" alt="code" class="object-cover h-20 w-20">
+   </div>
+   <div class="flex">
+        <div class="overscroll-contain overflow-y-scroll h-20 w-80 border border-gray-400">
+            <p>Scroll behavior demo</p>
+            <p>Scroll behavior demo</p>
+            <p>Scroll behavior demo</p>
+            <p>Scroll behavior demo</p>
+            <p>Scroll behavior demo</p>
+            <p>Scroll behavior demo</p>
+            <p>Scroll behavior demo</p>
+            <p>Scroll behavior demo</p>
+            <p>Scroll behavior demo</p>
+            <p>Scroll behavior demo</p>
+            <p>Scroll behavior demo</p>
+        </div>
+        <div>
+            <img src="pexels-pixabay-270404.jpg" alt="code" class="object-cover h-20 w-20">
+        </div>
+   </div>
+   <div class="relative h-20 border border-gray-400 mt-4">
+        <div class="absolute top-0 right-0 bg-pink-400 px-2 py-1">position absolute</div>
+        <p class="p-2">Relative position</p>
+   </div>
+   <div class="invisible bg-yellow-200 p-2 mt-4">
+    Invisible Data
+   </div>
+   <!-- alignment -->
+    <div class="justify-center flex border border-green-200">Centered data</div>
+    <div class="justify-items-start grid border border-green-200">Start aligned data</div>
+    <div class="justify-self-center grid border border-green-200">
+        <img src="pexels-pixabay-270404.jpg" alt="code" class="object-cover h-20 w-20">
+    </div>
+    <div class="items-center grid m-2 border border-green-200">
+        <img src="pexels-pixabay-270404.jpg" alt="code" class="object-cover h-20 w-20 mb-2">
+        <img src="pexels-pixabay-270404.jpg" alt="code" class="object-cover h-20 w-20 ">
+    </div>
+    <div class="items-stretch flex border border-green-200">
+        <img src="pexels-pixabay-270404.jpg" alt="code" class="object-cover h-20 w-20 m-2">
+        <img src="pexels-pixabay-270404.jpg" alt="code" class="object-cover h-20 w-20 ">
+    </div>
+    <div class="self-start border border-green-200">
+        <img src="pexels-pixabay-270404.jpg" alt="code" class="object-cover h-20 w-20 m-2">
+        <img src="pexels-pixabay-270404.jpg" alt="code" class="object-cover h-20 w-20 ">
+    </div>
+    <div class="place-self-end border border-blue-500">Self end</div>
+    <div class="shadow-lg">
+        <div class="opacity-80 bg-red-500">Opacity</div>
+    </div>
+    <div class="bg-gradient-to-r from-red-500 to-indigo-600 p-8 m-6 h-screen">
+        <p class="text-white text-xl ">This is a gradient demo</p>
+    </div>
+    <!-- typography -->
+     <!-- font family -->
+     <p class="font-sans">Font family</p>
+     <!-- font size -->
+      <p class="text-4md">Font size</p>
+      <p class="antialiased">Font Smoothing</p>
+      <!-- font style -->
+       <p class="italic">font style</p>
+       <!-- font weight -->
+        <p class="font-thin">Font weight</p>
+        <div class="relative group cursor-pointer">
+            <img src="pexels-pixabay-270404.jpg" alt="code" class="object-cover h-auto w-full ">
+            <div class="flex flex-col absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-80 flex items-center justify-center transition-opacity">
+                <p class="text-white text-xl">Learn more on coding at Zindua School and launch your career in tech</p>
+                <button class="text-white bg-red-500 rounded-sm w-40 h-20 px-4 mt-4 py-2 justify-self-center cursor-pointer">Get started</button>
+            </div>
+        </div>
+</body>
+</html>
